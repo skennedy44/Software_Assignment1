@@ -63,7 +63,7 @@ class Student {
         this.sUserName = sName.concat(age);
     }
 
-    public Programme getCourse(){
+    public Programme getCourses(){
         return sCourse;
     }
 
