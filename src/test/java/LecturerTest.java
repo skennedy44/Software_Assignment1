@@ -29,7 +29,7 @@ public class LecturerTest {
     @Order(2)
     @DisplayName("Testing getters and setters for lecturer name")
     void testLecturerNameGettersAndSetters(){
-        lecturer1.setlecName("Paul");
+        lecturer1.setLecName("Paul");
         assertEquals("Paul", lecturer1.getLecName());
     }
 
@@ -38,14 +38,14 @@ public class LecturerTest {
     @DisplayName("Testing getters and setters for lecture ID")
     void testLecturerIDGetterAndSetters(){
         lecturer1.setLecID(3);
-        assertEquals(3, lecturer1.getLecName());
+        assertEquals(3, lecturer1.getLecID());
     }
 
     @Test
     @DisplayName("Test getters and setters for lecture modules")
     void testLecturerDOBGettersAndSetters(){
-        lecturer1.setLecDOB(new DateTime("15-12-99"));
-        assertEquals(DateTime.parse("15-12-99"), lecturer1.getLecDOB());
+        lecturer1.setLecDOB(new DateTime("15-12-13"));
+        assertEquals(DateTime.parse("15-12-13"), lecturer1.getLecDOB());
     }
 
     @Test
@@ -55,8 +55,8 @@ public class LecturerTest {
         Modules mod2 = new Modules("chip design", "2");
 
         ArrayList<Modules> testModules = new ArrayList<>();
-        testModules.add(mod1);
         testModules.add(mod2);
+        testModules.add(mod1);
 
         lecturer1.setModuleList(testModules);
         assertEquals(testModules, lecturer1.getModuleList());

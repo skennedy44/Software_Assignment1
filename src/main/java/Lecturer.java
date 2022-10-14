@@ -31,7 +31,7 @@ import java.util.ArrayList;
             return lecName;
         }
 
-        public void setlecName(String lecName){
+        public void setLecName(String lecName){
             this.lecName = lecName;
         }
 
@@ -72,7 +72,7 @@ import java.util.ArrayList;
             return moduleList;
         }
 
-        public void setModuleList(ArrayList<Modules> modules){
+        public void setModuleList(ArrayList<Modules> moduleList){
             this.moduleList = moduleList;
         }
     }
