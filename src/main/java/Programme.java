@@ -10,7 +10,7 @@ class Programme {
     public DateTime startDate;
     public DateTime endDate;
 
-    public Programme(String courseName, DateTime startdate, DateTime endDate){
+    public Programme(String courseName, DateTime startDate, DateTime endDate){
         this.courseName = courseName;
         this.startDate = startDate;
         this.endDate = endDate;
